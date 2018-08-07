@@ -20,7 +20,9 @@ for (var c in countries) {
 		if (row) {
 			var label = row['Label'];
 			var type = row['Type'] == 'Company' ? '3' : '1';
-			var newRow = 'INSERT INTO `5_ML_CountryISP` (`Country`, `ClusterId`, `Type`) VALUES ("' + countries[c] + '", "' + label + '", "' + type + '");'
+			var cleanUpRegEx = row['CleanUpRegEx'];
+
+			var newRow = 'INSERT INTO `5_ML_CountryISP` (`Country`, `ClusterId`, `Type`, `CleanUpRegex`) VALUES ("' + countries[c] + '", "' + label + '", "' + type + '", "' + cleanUpRegEx + '");'
 		}
 		
 
