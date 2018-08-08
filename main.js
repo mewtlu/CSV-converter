@@ -26,8 +26,6 @@ for (var c in countries) {
 			var remove = row['Remove'];
 
 			if (label && type) {
-				process.stdout.write(countries[c] + '-' + label + '\t')
-
 				var cleanUpRegExObj = [];
 
 				if (remove) {
