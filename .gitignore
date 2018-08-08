@@ -65,3 +65,4 @@ out
 out/*
 data
 data/*
+*.sql
