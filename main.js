@@ -3,10 +3,8 @@
  */
 
 const fs = require('fs');
-//const csvParse = require('csv-parse/lib/sync');
 const cwdPath = process.cwd();
 const countries = ['gb', 'us', 'de', 'fr', 'ru', 'it', 'nl', 'cn', 'at', 'se', 'ca', 'pl', 'fi', 'cz', 'no'];
-//const countries = ['gb'];
 var countriesOut = [];
 
 for (var c in countries) {
